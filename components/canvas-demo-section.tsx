@@ -25,16 +25,16 @@ export function CanvasDemoSection() {
         {/* Full-Width Video Embed Container */}
         <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-12 shadow-xl">
           <div className="aspect-video bg-gray-300 rounded-2xl flex items-center justify-center relative overflow-hidden">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-ucsc-gold rounded-full flex items-center justify-center mb-4 mx-auto">
-                <svg className="w-8 h-8 text-ucsc-navy" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="text-gray-600 font-medium">Canvas Demo Video</p>
-              <p className="text-sm text-gray-500 mt-2">YouTube or Google Drive link ready</p>
-            </div>
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/watch?v=OZQnSENnST0"
+              title="Canvas Demo Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
+
 
           <div className="text-center mt-8">
             <p className="text-gray-600 italic leading-relaxed max-w-3xl mx-auto">
