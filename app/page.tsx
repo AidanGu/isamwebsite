@@ -12,7 +12,7 @@ import { TeamSection } from "@/components/team-section";
 import { AboutPosterSection } from "@/components/about-poster-section";
 import { Footer } from "@/components/footer";
 import { WavyBackgroundDemo } from "@/components/wavehead";
-import { Gallery } from "@/components/gallery";
+import { DraggableCardDemo } from "@/components/card_gallery";
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -21,6 +21,7 @@ export default function Home() {
       <div id="overview" className="bg-gray-50">
         <main>
           <EnhancedLinksHub />
+          <DraggableCardDemo />
           <BadgesSection />
           <CanvasSOPIconsSection />
           <CanvasDemoSection />
@@ -31,7 +32,6 @@ export default function Home() {
           <NewsletterWorkflowSection />
           <TeamSection />
           <AboutPosterSection />
-          {/* <Gallery /> */}
         </main>
         <Footer />
       </div>
