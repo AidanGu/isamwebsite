@@ -35,6 +35,7 @@ export const WavyBackground = ({
     ctx: any,
     canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
   const getSpeed = () => {
     switch (speed) {
       case "slow":
@@ -48,15 +49,23 @@ export const WavyBackground = ({
 
   const init = () => {
     canvas = canvasRef.current;
+    if (!canvas) return;
+
     ctx = canvas.getContext("2d");
-    w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
+    // Get the actual displayed size of the canvas
+    const rect = canvas.getBoundingClientRect();
+    w = ctx.canvas.width = rect.width;
+    h = ctx.canvas.height = rect.height;
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
+
     window.onresize = function () {
-      w = ctx.canvas.width = window.innerWidth;
-      h = ctx.canvas.height = window.innerHeight;
-      ctx.filter = `blur(${blur}px)`;
+      if (canvas) {
+        const rect = canvas.getBoundingClientRect();
+        w = ctx.canvas.width = rect.width;
+        h = ctx.canvas.height = rect.height;
+        ctx.filter = `blur(${blur}px)`;
+      }
     };
     render();
   };
@@ -68,16 +77,24 @@ export const WavyBackground = ({
     "#fdc700",
     "#f29813",
   ];
+
   const drawWave = (n: number) => {
     nt += getSpeed();
     for (i = 0; i < n; i++) {
       ctx.beginPath();
       ctx.lineWidth = waveWidth || 50;
       ctx.strokeStyle = waveColors[i % waveColors.length];
-      for (x = 0; x < w; x += 5) {
+      ctx.globalAlpha = waveOpacity || 0.5;
+
+      // Start the path properly
+      let firstY = noise(0 / 800, 0.3 * i, nt) * 100;
+      ctx.moveTo(0, firstY + h * 0.5);
+
+      for (x = 5; x < w; x += 5) {
         var y = noise(x / 800, 0.3 * i, nt) * 100;
-        ctx.lineTo(x, y + h * 0.5); // adjust for height, currently at 50% of the container
+        ctx.lineTo(x, y + h * 0.5);
       }
+
       ctx.stroke();
       ctx.closePath();
     }
@@ -85,9 +102,12 @@ export const WavyBackground = ({
 
   let animationId: number;
   const render = () => {
+    // Clear the canvas first
+    ctx.globalAlpha = 1;
     ctx.fillStyle = backgroundFill || "black";
-    ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
+
+    // Draw waves
     drawWave(5);
     animationId = requestAnimationFrame(render);
   };
@@ -112,15 +132,18 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "h-screen flex flex-col items-center justify-center",
+        "h-screen flex flex-col items-center justify-center overflow-hidden",
         containerClassName
       )}
     >
       <canvas
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 w-full h-full"
         ref={canvasRef}
         id="canvas"
         style={{
+          display: "block",
+          width: "100%",
+          height: "100%",
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}
       ></canvas>
