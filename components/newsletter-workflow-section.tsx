@@ -88,27 +88,6 @@ export function NewsletterWorkflowSection() {
           </div>
         </div>
 
-        {/* Newsletter Demo Video Section */}
-        <div className="bg-gradient-to-br from-ucsc-navy to-ucsc-blue p-10 rounded-3xl shadow-xl text-white">
-          <h3 className="text-2xl font-bold text-center mb-8">Newsletter Workflow Demo</h3>
-
-          {/* Video Embed Space */}
-          <div className="aspect-video bg-black/20 rounded-2xl flex items-center justify-center relative overflow-hidden mb-6">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="text-white/90 font-medium">Newsletter Demo Video</p>
-              <p className="text-sm text-white/70 mt-2">Shows automated Google Scripts workflow</p>
-            </div>
-          </div>
-
-          <p className="text-center text-white/90 italic leading-relaxed">
-            "This workflow automatically enrolls students into a Google Group newsletter through Apps Script — no manual
-            steps."
-          </p>
         </div>
       </div>
     </section>
