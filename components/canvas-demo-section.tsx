@@ -27,14 +27,13 @@ export function CanvasDemoSection() {
           <div className="aspect-video bg-gray-300 rounded-2xl flex items-center justify-center relative overflow-hidden">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/watch?v=OZQnSENnST0"
+              src="https://www.youtube.com/embed/OZQnSENnST0"
               title="Slugworks Canvas Walkthrough Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
-
 
           <div className="text-center mt-8">
             <p className="text-gray-600 italic leading-relaxed max-w-3xl mx-auto">
@@ -43,7 +42,6 @@ export function CanvasDemoSection() {
             </p>
           </div>
         </div>
-      </div>
       </div>
     </section>
   )
