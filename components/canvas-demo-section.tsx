@@ -28,7 +28,7 @@ export function CanvasDemoSection() {
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/watch?v=OZQnSENnST0"
-              title="Canvas Demo Video"
+              title="Slugworks Canvas Walkthrough Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -43,6 +43,7 @@ export function CanvasDemoSection() {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </section>
   )
