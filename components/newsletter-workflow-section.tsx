@@ -29,65 +29,62 @@ export function NewsletterWorkflowSection() {
         </div>
 
         {/* Newsletter Visual Flow */}
-        <div className="bg-white p-12 rounded-3xl shadow-xl mb-12">
-          <h3 className="text-2xl font-bold text-ucsc-navy text-center mb-8">Automated Workflow</h3>
-
-          {/* Horizontal Visual Chain */}
-          <div className="flex items-center justify-center space-x-8 mb-8">
-            {/* Speaker Icon */}
-            <div className="text-center">
-              <div className="w-20 h-20 bg-orange-100 rounded-2xl flex items-center justify-center mb-4">
-                <Image
-                  src="/images/newsletter-icon.png"
-                  alt="Newsletter Speaker"
-                  width={40}
-                  height={40}
-                  className="object-contain"
-                />
-              </div>
-              <p className="text-sm font-medium text-gray-700">Canvas Enrollment</p>
+        <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8">
+          {/* Step 1: Canvas Enrollment */}
+          <div className="text-center">
+            <div className="w-20 h-20 bg-orange-100 rounded-2xl flex items-center justify-center mb-3 mx-auto">
+              <Image
+                src="/images/newsletter-icon.png"
+                alt="Canvas Enrollment"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
             </div>
+            <p className="text-sm font-medium text-gray-700">Canvas Enrollment</p>
+          </div>
 
-            {/* Arrow */}
-            <div className="text-ucsc-gold">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+          {/* Arrow */}
+          <div className="text-ucsc-gold text-xl hidden md:block">
+            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+            </svg>
+          </div>
+          <div className="text-ucsc-gold text-2xl md:hidden">↓</div>
+
+          {/* Step 2: Google Groups */}
+          <div className="text-center">
+            <div className="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mb-3 mx-auto">
+              <Image
+                src="/images/google-groups-icon.png"
+                alt="Google Groups"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+            </div>
+            <p className="text-sm font-medium text-gray-700">Google Groups (via Script)</p>
+          </div>
+
+          {/* Arrow */}
+          <div className="text-ucsc-gold text-xl hidden md:block">
+            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+            </svg>
+          </div>
+          <div className="text-ucsc-gold text-2xl md:hidden">↓</div>
+
+          {/* Step 3: Newsletter Email */}
+          <div className="text-center">
+            <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-3 mx-auto">
+              <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
               </svg>
             </div>
-
-            {/* Newsletter Screenshot */}
-            <div className="text-center">
-              <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-4">
-                <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                </svg>
-              </div>
-              <p className="text-sm font-medium text-gray-700">Newsletter Email</p>
-            </div>
-
-            {/* Arrow */}
-            <div className="text-ucsc-gold">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-              </svg>
-            </div>
-
-            {/* Google Groups Icon */}
-            <div className="text-center">
-              <div className="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mb-4">
-                <Image
-                  src="/images/google-groups-icon.png"
-                  alt="Google Groups"
-                  width={40}
-                  height={40}
-                  className="object-contain"
-                />
-              </div>
-              <p className="text-sm font-medium text-gray-700">Google Groups</p>
-            </div>
+            <p className="text-sm font-medium text-gray-700">Newsletter Email</p>
           </div>
         </div>
       </div>
     </section>
   )
-}
+} 
