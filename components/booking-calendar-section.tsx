@@ -28,10 +28,10 @@ export function BookingCalendarSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <Card className="rounded-3xl border-0 shadow-xl bg-gradient-to-br from-orange-500 to-orange-600 text-white hover:shadow-2xl transition-all duration-300">
+          <Card className="rounded-xl border border-gray-200 bg-gradient-to-br from-orange-100 to-orange-200 text-gray-900 hover:shadow-lg transition-all duration-300">
             <CardHeader className="pb-4">
               <CardTitle className="flex items-center space-x-4 text-2xl">
-                <div className="relative w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
+                <div className="relative w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-sm">
                   <Image
                     src="/images/be98-booking-icon.png"
                     alt="Booking System"
@@ -48,8 +48,8 @@ export function BookingCalendarSection() {
                 After completing required safety modules, students can immediately book their in-person checkoffs
                 through Canvas-integrated Appointlet scheduling.
               </p>
-              <div className="bg-white/20 p-4 rounded-2xl">
-                <h4 className="font-semibold text-ucsc-gold mb-2">Streamlined Process:</h4>
+              <div className="bg-white/70 p-4 rounded-md border border-orange-200">
+                <h4 className="font-semibold text-ucsc-navy mb-2">Streamlined Process:</h4>
                 <ul className="text-sm space-y-2 opacity-90">
                   <li>• Complete safety training modules</li>
                   <li>• Schedule checkoff appointments</li>
@@ -60,10 +60,10 @@ export function BookingCalendarSection() {
             </CardContent>
           </Card>
 
-          <Card className="rounded-3xl border-0 shadow-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:shadow-2xl transition-all duration-300">
+          <Card className="rounded-xl border border-gray-200 bg-gradient-to-br from-blue-100 to-blue-200 text-gray-900 hover:shadow-lg transition-all duration-300">
             <CardHeader className="pb-4">
               <CardTitle className="flex items-center space-x-4 text-2xl">
-                <div className="relative w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
+                <div className="relative w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-sm">
                   <Image
                     src="/images/calendar-icon.png"
                     alt="Calendar Integration"
@@ -80,8 +80,8 @@ export function BookingCalendarSection() {
                 Canvas Calendar syncs with Appointlet to provide a unified scheduling experience, reducing
                 administrative overhead.
               </p>
-              <div className="bg-white/20 p-4 rounded-2xl">
-                <h4 className="font-semibold text-ucsc-gold mb-2">Benefits:</h4>
+              <div className="bg-white/70 p-4 rounded-md border border-blue-200">
+                <h4 className="font-semibold text-ucsc-navy mb-2">Benefits:</h4>
                 <ul className="text-sm space-y-2 opacity-90">
                   <li>• Unified calendar view</li>
                   <li>• Automated reminders</li>
