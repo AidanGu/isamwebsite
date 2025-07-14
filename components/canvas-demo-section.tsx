@@ -1,3 +1,8 @@
+'use client'
+import React from "react" 
+
+
+
 export function CanvasDemoSection() {
   return (
     <section className="py-20 px-4 bg-white relative overflow-hidden">
