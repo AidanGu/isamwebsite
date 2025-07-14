@@ -37,8 +37,7 @@ export function CanvasDemoSection() {
 
           <div className="text-center mt-8">
             <p className="text-gray-600 italic leading-relaxed max-w-3xl mx-auto">
-              "Watch how Slugworks uses Canvas to streamline training, scheduling, and certification across our
-              makerspaces."
+              Slugworks Learning by Design Community Curator Aidan Gu walks through the student onboarding experience via Canvas—highlighting how students explore maker modules, unlock safety certifications, and stay connected through automated newsletters.
             </p>
           </div>
         </div>
