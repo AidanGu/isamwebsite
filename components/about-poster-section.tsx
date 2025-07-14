@@ -57,7 +57,7 @@ export function AboutPosterSection() {
                     className="bg-ucsc-navy hover:bg-blue-800 text-white font-bold px-10 py-4 text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     <Download className="mr-3" size={24} />
-                    Download Poster PDF
+                    Poster PDF
                   </Button>
                 </a>
               </div>
