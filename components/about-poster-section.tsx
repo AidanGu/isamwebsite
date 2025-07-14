@@ -46,13 +46,20 @@ export function AboutPosterSection() {
               </div>
 
               <div className="text-center">
-                <Button
-                  size="lg"
-                  className="bg-ucsc-navy hover:bg-blue-800 text-white font-bold px-10 py-4 text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                <a
+                  href="https://isam2025.exordo.com/files/papers/145/final_draft/ISAM_Poster_FINAL.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center"
                 >
-                  <Download className="mr-3" size={24} />
-                  Download Poster PDF
-                </Button>
+                  <Button
+                    size="lg"
+                    className="bg-ucsc-navy hover:bg-blue-800 text-white font-bold px-10 py-4 text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <Download className="mr-3" size={24} />
+                    Download Poster PDF
+                  </Button>
+                </a>
               </div>
             </div>
           </CardContent>
