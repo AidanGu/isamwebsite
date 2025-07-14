@@ -1,7 +1,5 @@
 'use client'
-import React from "react" 
-
-
+import React from "react"
 
 export function CanvasDemoSection() {
   return (
@@ -27,7 +25,6 @@ export function CanvasDemoSection() {
           </p>
         </div>
 
-        {/* Full-Width Video Embed Container */}
         {/* Enhanced Video Embed for Mobile */}
         <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl px-4 py-8 sm:p-12 shadow-xl">
           <div className="aspect-video bg-gray-300 rounded-2xl flex items-center justify-center relative overflow-hidden max-w-full sm:max-w-5xl mx-auto scale-[1.05] sm:scale-100 transition-transform duration-300">
@@ -40,13 +37,12 @@ export function CanvasDemoSection() {
               allowFullScreen
             ></iframe>
           </div>
-        
+
           <div className="text-center mt-6 sm:mt-8">
             <p className="text-gray-600 italic leading-relaxed max-w-2xl sm:max-w-3xl mx-auto text-sm sm:text-base">
               Slugworks Learning by Design Community Curator Aidan Gu walks through the student onboarding experience via Canvas—highlighting how students explore maker modules, unlock safety certifications, and stay connected through automated newsletters.
             </p>
           </div>
-        </div>
         </div>
       </div>
     </section>
