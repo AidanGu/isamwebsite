@@ -23,7 +23,7 @@ export function CanvasSOPIconsSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-ucsc-navy mb-6 font-space-grotesk">Safety & SOPs</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Review these core safety protocols before using any Slugworks equipment. These visuals and SOP modules ensure a safe, welcoming, and well-supported experience.
+            In order for students to gain full access to each area in Slugworks, they must complete safety-focused Canvas modules specific to each zone and machine. These modules include quizzes and knowledge checks that confirm understanding of operational and environmental safety. Below are some of the icons featured in these Canvas modules. These visuals and SOP modules ensure a safe, welcoming, and well-supported experience.
           </p>
         </div>
 
