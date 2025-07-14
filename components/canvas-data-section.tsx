@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { BarChart3, Users, Clock, TrendingUp } from "lucide-react"
+import Image from "next/image"
 
 export function CanvasDataSection() {
   return (
@@ -13,38 +14,57 @@ export function CanvasDataSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <Card className="rounded-3xl border-0 shadow-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <Card className="rounded-xl border border-blue-100 bg-gradient-to-br from-blue-100 to-blue-200 text-gray-900 text-center">
             <CardContent className="p-8">
-              <Users className="mx-auto mb-4 text-ucsc-gold" size={48} />
+              <Users className="mx-auto mb-4 text-blue-600" size={48} />
               <h3 className="text-xl font-bold mb-2">Demographics</h3>
               <p className="text-sm opacity-90">Track engagement across departments and backgrounds</p>
             </CardContent>
           </Card>
 
-          <Card className="rounded-3xl border-0 shadow-xl bg-gradient-to-br from-green-500 to-green-600 text-white text-center">
+          <Card className="rounded-xl border border-green-100 bg-gradient-to-br from-green-100 to-green-200 text-gray-900 text-center">
             <CardContent className="p-8">
-              <BarChart3 className="mx-auto mb-4 text-ucsc-gold" size={48} />
+              <BarChart3 className="mx-auto mb-4 text-green-600" size={48} />
               <h3 className="text-xl font-bold mb-2">Tool Usage</h3>
               <p className="text-sm opacity-90">Monitor equipment popularity and patterns</p>
             </CardContent>
           </Card>
 
-          <Card className="rounded-3xl border-0 shadow-xl bg-gradient-to-br from-purple-500 to-purple-600 text-white text-center">
+          <Card className="rounded-xl border border-purple-100 bg-gradient-to-br from-purple-100 to-purple-200 text-gray-900 text-center">
             <CardContent className="p-8">
-              <Clock className="mx-auto mb-4 text-ucsc-gold" size={48} />
+              <Clock className="mx-auto mb-4 text-purple-600" size={48} />
               <h3 className="text-xl font-bold mb-2">Completion Time</h3>
               <p className="text-sm opacity-90">Analyze training progression speed</p>
             </CardContent>
           </Card>
 
-          <Card className="rounded-3xl border-0 shadow-xl bg-gradient-to-br from-orange-500 to-orange-600 text-white text-center">
+          <Card className="rounded-xl border border-orange-100 bg-gradient-to-br from-orange-100 to-orange-200 text-gray-900 text-center">
             <CardContent className="p-8">
-              <TrendingUp className="mx-auto mb-4 text-ucsc-gold" size={48} />
+              <TrendingUp className="mx-auto mb-4 text-orange-600" size={48} />
               <h3 className="text-xl font-bold mb-2">Growth Trends</h3>
               <p className="text-sm opacity-90">Track makerspace expansion over time</p>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="text-center max-w-4xl mx-auto mb-12">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            We presented this data to Dean of Engineering Alexander Wolf to showcase our growth and impact. Separately, Aidan Gu was also able to speak with Chancellor Cynthia Larive about the project and its potential to support broader student success at UCSC.
+          </p>
+        </div>
+
+        <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 max-w-4xl mx-auto mb-12">
+          <Image
+            src="/images/ChancellorZoomPhoto.png"
+            alt="Aidan Gu speaking with Chancellor Cynthia Larive"
+            width={1200}
+            height={800}
+            className="w-full object-cover"
+          />
+          <p className="text-center text-sm text-gray-500 mt-4 px-4">
+            A Zoom conversation with Chancellor Cynthia Larive about Slugworks’ impact, community growth, and potential for future institutional support.
+          </p>
         </div>
       </div>
     </section>
