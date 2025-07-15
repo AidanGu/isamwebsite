@@ -85,7 +85,7 @@ export function DraggableCardDemo() {
             <img
               src={item.image}
               alt={`Card ${item.id}`}
-              className="pointer-events-none relative z-10 h-80 w-80 object-cover"
+              className="pointer-events-none relative z-10 h-40 w-40 md:h-80 md:w-80 object-cover"
             />
           </DraggableCardBody>
         ))}
