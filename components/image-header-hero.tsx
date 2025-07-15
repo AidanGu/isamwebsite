@@ -10,7 +10,6 @@ export function ImageHeaderHero() {
   const [headerVisible, setHeaderVisible] = useState(false)
   const heroRef = useRef<HTMLDivElement>(null)
 
-  // Optimized scroll handler with throttling
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY
     const windowHeight = window.innerHeight
@@ -42,18 +41,16 @@ export function ImageHeaderHero() {
     }
   }
 
-  // Scroll-driven image animation - subtle parallax and fade
   const windowHeight = typeof window !== "undefined" ? window.innerHeight : 800
-  const imageTranslateY = scrollY * 0.3 // Subtle parallax movement
-  const imageOpacity = Math.max(0, 1 - scrollY / (windowHeight * 0.8)) // Smooth fade out
-  const imageScale = Math.max(0.95, 1 - scrollY / (windowHeight * 2)) // Subtle scale down
+  const imageTranslateY = scrollY * 0.3
+  const imageOpacity = Math.max(0, 1 - scrollY / (windowHeight * 0.8))
+  const imageScale = Math.max(0.95, 1 - scrollY / (windowHeight * 2))
 
   return (
     <>
-      {/* Optimized Sticky Header */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          headerVisible ? "bg-gray-50/90 backdrop-blur-sm shadow-lg" : "bg-transparent"
+          headerVisible ? "bg-black/90 backdrop-blur-sm shadow-lg" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-6 py-4">
@@ -68,7 +65,9 @@ export function ImageHeaderHero() {
               />
             </div>
             <div
-              className={`text-right transition-colors duration-300 ${headerVisible ? "text-ucsc-navy" : "text-white"}`}
+              className={`text-right transition-colors duration-300 ${
+                headerVisible ? "text-ucsc-navy" : "text-white"
+              }`}
             >
               <p className="text-lg font-bold text-ucsc-gold">ISAM 2025</p>
               <p className="text-sm opacity-90">UC Santa Cruz</p>
@@ -77,7 +76,6 @@ export function ImageHeaderHero() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <div
         ref={heroRef}
         className="relative h-screen overflow-hidden"
@@ -85,7 +83,6 @@ export function ImageHeaderHero() {
           background: `linear-gradient(135deg, #003c6c 0%, #1e40af 40%, #F29813 100%)`,
         }}
       >
-        {/* Clean gradient background */}
         <div
           className="absolute inset-0 opacity-60"
           style={{
@@ -96,7 +93,6 @@ export function ImageHeaderHero() {
           }}
         />
 
-        {/* Header Image Container - Properly Sized */}
         <div className="absolute inset-0 z-20 flex flex-col justify-start items-center pt-24 pointer-events-none">
           <div
             className="w-full max-w-7xl px-4"
@@ -106,12 +102,12 @@ export function ImageHeaderHero() {
               willChange: "transform, opacity",
             }}
           >
-            {/* Properly Sized Header Image */}
             <div className="relative w-full flex justify-center mb-12">
               <div
                 className="relative w-full max-w-5xl h-24 md:h-32 lg:h-40"
                 style={{
-                  filter: "drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2))",
+                  filter:
+                    "drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2))",
                 }}
               >
                 <Image
@@ -125,7 +121,6 @@ export function ImageHeaderHero() {
               </div>
             </div>
 
-            {/* Subtitle Stack */}
             <div className="relative mb-12 space-y-6 text-center max-w-6xl mx-auto px-6">
               <p className="text-lg md:text-xl lg:text-2xl text-white font-bold leading-relaxed font-inter">
                 A centralized, student-led approach to certification, collaboration, and community using Canvas.
@@ -137,7 +132,6 @@ export function ImageHeaderHero() {
               </p>
             </div>
 
-            {/* CTA Button */}
             <div className="pointer-events-auto mb-16 text-center">
               <Button
                 size="lg"
@@ -162,7 +156,6 @@ export function ImageHeaderHero() {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div
           className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 transition-opacity duration-300 ${
             scrollY < windowHeight * 0.2 ? "opacity-100" : "opacity-0"
@@ -174,7 +167,6 @@ export function ImageHeaderHero() {
           </div>
         </div>
 
-        {/* Subtle Ambient Effects */}
         <div className="absolute top-1/3 left-1/3 w-64 h-64 bg-ucsc-gold/8 rounded-full blur-3xl animate-pulse" />
         <div
           className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-orange-400/8 rounded-full blur-3xl animate-pulse"
