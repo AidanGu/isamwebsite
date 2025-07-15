@@ -70,7 +70,7 @@ export function CanvasDataSection() {
               className="rounded-xl shadow-md mx-auto"
             />
             <p className="text-sm text-gray-500 mt-2">
-              Example: Student distribution by academic division (2024–25). Data anonymized for demonstration.
+              Example: Student distribution by academic division ('24–'25). Data anonymized for demonstration.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export function CanvasDataSection() {
               className="rounded-xl shadow-md mx-auto"
             />
             <p className="text-sm text-gray-500 mt-2">
-              Example: Top majors represented in general membership. Data anonymized for demonstration.
+              Example: Top majors represented in general membership ('24-'25). Data anonymized for demonstration.
             </p>
           </div>
 
@@ -96,7 +96,7 @@ export function CanvasDataSection() {
               className="rounded-xl shadow-md mx-auto"
             />
             <p className="text-sm text-gray-500 mt-2">
-              Example: Race and ethnicity breakdown for 2024–25 general members. Data anonymized for demonstration.
+              Example: Race and ethnicity breakdown for general members ('24-'25). Data anonymized for demonstration.
             </p>
           </div>
         </div>
