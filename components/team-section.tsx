@@ -43,19 +43,19 @@ export function TeamSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:grid-cols-2 lg:grid-cols-2">
           {teamMembers.map((member, index) => (
             <Card
               key={index}
               className="rounded-3xl border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300"
             >
               <CardContent className="p-8 text-center">
-                <div className="w-40 h-40 mx-auto mb-6">
+                <div className="w-48 h-48 mx-auto mb-6">
                   <Image
                     src={member.image}
                     alt={`Photo of ${member.name}`}
-                    width={160}
-                    height={160}
+                    width={192}
+                    height={192}
                     className="rounded-full object-cover w-full h-full"
                   />
                 </div>
@@ -78,6 +78,12 @@ export function TeamSection() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <p className="text-gray-600 text-sm md:text-base">
+            Special thanks to Sankritya Anand Rai (Sankie) for contributing to the development of this website.
+          </p>
         </div>
       </div>
     </section>
