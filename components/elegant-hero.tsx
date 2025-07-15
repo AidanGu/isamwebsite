@@ -53,7 +53,7 @@ export function ElegantHero() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           headerVisible
-            ? "bg-gray-50/90 backdrop-blur-sm shadow-lg"
+            ? "bg-black shadow-lg"
             : "bg-transparent"
         }`}
       >
