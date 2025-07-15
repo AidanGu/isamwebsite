@@ -16,7 +16,7 @@ const teamMembers = [
     title: "Slugworks Lab Manager",
     email: "nkouatli@ucsc.edu",
     location: "University of California, Santa Cruz",
-    image: "/images/Nick-Staff-Photo.png",
+    image: "/images/Nick-Staff-Photo-2.png",
   },
   {
     name: "Dr. Tamara Ball",
