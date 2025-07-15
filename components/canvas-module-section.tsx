@@ -24,11 +24,12 @@ export function CanvasModuleSection() {
 
         <Card className="rounded-3xl border-0 shadow-xl bg-white">
           <CardContent className="p-8">
-            <div className="text-center mb-4">
+            <div className="text-center mb-6">
               <p className="text-base md:text-lg font-semibold text-red-600 animate-pulse drop-shadow-lg">
                 CLICK IMAGE TO SEE CANVAS IN ACTION!
               </p>
             </div>
+
 
             <div
               className="relative w-full h-96 rounded-2xl overflow-hidden cursor-zoom-in transition-all duration-300 hover:scale-110"
