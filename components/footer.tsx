@@ -34,7 +34,15 @@ export function Footer() {
           <p className="text-gray-300 mb-4 text-lg">
             Fostering innovation through comprehensive collaboration and communication tools integrated with Canvas.
           </p>
-          <div className="text-ucsc-gold font-bold text-xl">Presented at ISAM 2025</div>
+          <a
+            href="https://isam2025.hemi-makers.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ucsc-gold font-bold text-xl hover:underline"
+          >
+            Presented at ISAM 2025
+          </a>
+
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
