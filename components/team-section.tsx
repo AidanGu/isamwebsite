@@ -84,7 +84,7 @@ export function TeamSection() {
                       rel="noopener noreferrer"
                       className="text-sm text-ucsc-blue hover:text-ucsc-navy font-medium underline"
                     >
-                      View LinkedIn Profile
+                      connect with me!
                     </a>
                   )}
                 </div>
