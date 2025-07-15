@@ -28,7 +28,7 @@ export function DSICollaborationSection() {
           <CardContent className="p-8">
             <div className="text-center mb-4">
               <p className="text-base md:text-lg font-semibold text-red-600 animate-pulse drop-shadow-lg">
-                Click to see Canvas in action
+                CLICK IMAGE TO SEE CANVAS IN ACTION!
               </p>
             </div>
           
