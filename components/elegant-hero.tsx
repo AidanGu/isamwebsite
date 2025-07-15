@@ -61,7 +61,7 @@ export function ElegantHero() {
           <div className="flex items-center justify-between">
             <div className="relative w-40 h-7">
               <a
-                href="https://slugworks.ucsc.edu"
+                href="https://slugworks.engineering.ucsc.edu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative w-40 h-7 block"
