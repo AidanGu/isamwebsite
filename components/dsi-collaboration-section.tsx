@@ -26,6 +26,12 @@ export function DSICollaborationSection() {
 
         <Card className="rounded-3xl border-0 shadow-xl bg-white">
           <CardContent className="p-8">
+            <div className="text-center mb-4">
+              <p className="text-base md:text-lg font-semibold text-red-600 animate-pulse drop-shadow-lg">
+                Click to see Canvas in action
+              </p>
+            </div>
+          
             <div
               className={`relative w-full rounded-2xl overflow-hidden cursor-zoom-in transition-all duration-300 hover:scale-110 ${
                 isExpanded ? "h-96" : "h-64"
@@ -43,7 +49,6 @@ export function DSICollaborationSection() {
                 fill
                 className="object-contain transition-transform duration-300"
               />
-
             </div>
           </CardContent>
         </Card>
