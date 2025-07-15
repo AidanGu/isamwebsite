@@ -13,9 +13,15 @@ export function DSICollaborationSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-ucsc-navy mb-6">Seamless Certification Across Campus</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            This shared certification workflow between DSI and Slugworks allows students to complete training once and
-            unlock tools in both locations. It's all handled through a streamlined Canvas process.
+            This shared certification workflow between DSI and Slugworks allows students to complete training once and unlock tools in both locations. The entire process is handled through a single streamlined Canvas module.
           </p>
+          <p className="text-md text-gray-600 max-w-4xl mx-auto leading-relaxed mt-4">
+            The Digital Scholarship Innovation Studio (DSI), located in the Science and Engineering Library, offers hands-on resources for digital fabrication, 3D data, and critical making. This unified system reduces duplication, encourages cross-campus collaboration, and supports open experimentation.
+          </p>
+          <p className="text-sm text-gray-500 max-w-3xl mx-auto mt-2 italic">
+            The workflow below shows how students move through certification to gain access at both DSI and Slugworks.
+          </p>
+
         </div>
 
         <Card className="rounded-3xl border-0 shadow-xl bg-white">
