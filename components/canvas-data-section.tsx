@@ -50,7 +50,7 @@ export function CanvasDataSection() {
 
         <div className="text-center max-w-4xl mx-auto mb-12">
           <p className="text-lg text-gray-700 leading-relaxed">
-            We presented this data to Dean of Engineering Alexander Wolf to showcase our growth and impact. Separately, Aidan Gu was also able to speak with Chancellor Cynthia Larive about the project and its potential to support broader student success at UCSC.
+            We presented this data to Dean of Engineering Alexander Wolf to showcase Slugworks’ growth, community impact, and potential. Aidan Gu also had the opportunity to speak with Chancellor Cynthia Larive about the project’s role in supporting broader student success and strengthening community engagement at UCSC.
           </p>
         </div>
 
@@ -63,8 +63,49 @@ export function CanvasDataSection() {
             className="w-full object-cover"
           />
           <p className="text-center text-sm text-gray-500 mt-4 px-4">
-            A Zoom conversation with Chancellor Cynthia Larive about Slugworks’ impact, community growth, and potential for future institutional support.
+            A Zoom conversation between Aidan Gu and Chancellor Cynthia Larive about Slugworks’ impact, community growth, and potential for future institutional support.
           </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="text-center">
+            <Image
+              src="/images/graph1.png"
+              alt="Example graph of student distribution by division"
+              width={500}
+              height={500}
+              className="rounded-xl shadow-md mx-auto"
+            />
+            <p className="text-sm text-gray-500 mt-2">
+              Example: Student distribution by academic division (2024–25). Data anonymized for privacy.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <Image
+              src="/images/graph2.png"
+              alt="Example graph of top majors in general membership"
+              width={500}
+              height={500}
+              className="rounded-xl shadow-md mx-auto"
+            />
+            <p className="text-sm text-gray-500 mt-2">
+              Example: Top majors represented in Slugworks general membership. Visualizing where our student makers come from.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <Image
+              src="/images/graph3.png"
+              alt="Example graph of race and ethnicity data"
+              width={500}
+              height={500}
+              className="rounded-xl shadow-md mx-auto"
+            />
+            <p className="text-sm text-gray-500 mt-2">
+              Example: Race and ethnicity breakdown of general members (2024–25). Demo data for visualization purposes only.
+            </p>
+          </div>
         </div>
       </div>
     </section>
