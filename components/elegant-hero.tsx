@@ -68,11 +68,7 @@ export function ElegantHero() {
                 priority
               />
             </div>
-            <div
-              className={`text-right transition-colors duration-300 ${
-                headerVisible ? "text-ucsc-navy" : "text-white"
-              }`}
-            >
+            <div className="text-right text-white transition-colors duration-300">
               <p className="text-lg font-bold text-ucsc-gold">ISAM 2025</p>
               <p className="text-sm opacity-90">UC Santa Cruz</p>
             </div>
