@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail } from "lucide-react";
 import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
 
 const teamMembers = [
   {
@@ -70,25 +69,25 @@ export function TeamSection() {
                 <p className="text-gray-600 mb-4 leading-relaxed text-sm">
                   {member.location}
                 </p>
-                <a
-                  href={`mailto:${member.email}`}
-                  className="inline-flex items-center space-x-2 text-ucsc-blue hover:text-ucsc-navy transition-colors font-medium"
-                >
-                  <Mail size={18} />
-                  <span>{member.email}</span>
-                </a>
-
-                {member.linkedin && (
+                <div className="flex flex-col items-center space-y-2">
                   <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors font-medium mt-2"
+                    href={`mailto:${member.email}`}
+                    className="inline-flex items-center space-x-2 text-ucsc-blue hover:text-ucsc-navy transition-colors font-medium"
                   >
-                    <FaLinkedin size={18} />
-                    <span>LinkedIn</span>
+                    <Mail size={18} />
+                    <span>{member.email}</span>
                   </a>
-                )}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-ucsc-blue hover:text-ucsc-navy font-medium underline"
+                    >
+                      View LinkedIn Profile
+                    </a>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
