@@ -60,13 +60,20 @@ export function ElegantHero() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="relative w-40 h-7">
-              <Image
-                src="/images/BE-and-Slugworks-Combination-Mark-(For-Header) (1).png"
-                alt="Baskin Engineering & Slugworks"
-                fill
-                className="object-fit"
-                priority
-              />
+              <a
+                href="https://slugworks.ucsc.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative w-40 h-7 block"
+              >
+                <Image
+                  src="/images/BE-and-Slugworks-Combination-Mark-(For-Header) (1).png"
+                  alt="Baskin Engineering & Slugworks"
+                  fill
+                  className="object-fit"
+                  priority
+                />
+              </a>
             </div>
             <div className="text-right text-white transition-colors duration-300">
               <p className="text-lg font-bold text-ucsc-gold">ISAM 2025</p>
