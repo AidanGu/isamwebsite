@@ -52,7 +52,13 @@ export function CanvasDataSection() {
           <p className="text-lg text-gray-700 leading-relaxed">
             We presented this data to Dean of Engineering Alexander Wolf to showcase Slugworks’ growth, community impact, and potential. Aidan Gu also had the opportunity to speak with Chancellor Cynthia Larive about the project’s role in supporting broader student success and strengthening community engagement at UCSC.
           </p>
+
+          <p className="text-sm text-gray-500 mt-4">
+    Example data shown during the presentation to Dean Wolf.
+          </p>
         </div>
+
+        
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto mb-16">
           <div className="text-center transform transition-transform duration-300 hover:scale-105">
@@ -64,7 +70,7 @@ export function CanvasDataSection() {
               className="rounded-xl shadow-md mx-auto"
             />
             <p className="text-sm text-gray-500 mt-2">
-              Example data shown during the presentation to Dean Wolf: Student distribution by academic division (2024–25). Data anonymized for demonstration.
+              Example: Student distribution by academic division (2024–25). Data anonymized for demonstration.
             </p>
           </div>
 
@@ -77,7 +83,7 @@ export function CanvasDataSection() {
               className="rounded-xl shadow-md mx-auto"
             />
             <p className="text-sm text-gray-500 mt-2">
-              Example: Top majors represented in general membership. Demonstrates Canvas’ ability to highlight engagement by discipline.
+              Example: Top majors represented in general membership. Data anonymized for demonstration.
             </p>
           </div>
 
@@ -90,7 +96,7 @@ export function CanvasDataSection() {
               className="rounded-xl shadow-md mx-auto"
             />
             <p className="text-sm text-gray-500 mt-2">
-              Example: Race and ethnicity breakdown for 2024–25 general members. Demo data used for visualization and impact storytelling.
+              Example: Race and ethnicity breakdown for 2024–25 general members. Data anonymized for demonstration.
             </p>
           </div>
         </div>
