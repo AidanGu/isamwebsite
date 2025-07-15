@@ -20,14 +20,19 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Header Logo Section */}
         <div className="flex items-center justify-center mb-8">
-          <div className="relative w-80 h-16">
+          <a
+            href="https://slugworks.engineering.ucsc.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-80 h-16 block"
+          >
             <Image
               src="/images/slugworks-combination-mark.png"
               alt="Baskin Engineering & Slugworks"
               fill
               className="object-contain"
             />
-          </div>
+          </a>
         </div>
 
         <div className="text-center mb-6">
