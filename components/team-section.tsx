@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail } from "lucide-react";
 import Image from "next/image";
+import { FaLinkedin } from "react-icons/fa";
 
 const teamMembers = [
   {
@@ -9,6 +10,7 @@ const teamMembers = [
     email: "ahgu@ucsc.edu",
     location: "University of California, Santa Cruz",
     image: "/images/Aidan-Staff-Photo.png",
+    linkedin: "https://www.linkedin.com/in/aidangu/"
   },
   {
     name: "Mr. Nicolas Kouatli",
@@ -75,6 +77,18 @@ export function TeamSection() {
                   <Mail size={18} />
                   <span>{member.email}</span>
                 </a>
+
+                {member.linkedin && (
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors font-medium mt-2"
+                  >
+                    <FaLinkedin size={18} />
+                    <span>LinkedIn</span>
+                  </a>
+                )}
               </CardContent>
             </Card>
           ))}
