@@ -48,10 +48,51 @@ export function CanvasDataSection() {
           </Card>
         </div>
 
-        <div className="text-center max-w-4xl mx-auto mb-12">
+        <div className="text-center max-w-4xl mx-auto mb-8">
           <p className="text-lg text-gray-700 leading-relaxed">
             We presented this data to Dean of Engineering Alexander Wolf to showcase Slugworks’ growth, community impact, and potential. Aidan Gu also had the opportunity to speak with Chancellor Cynthia Larive about the project’s role in supporting broader student success and strengthening community engagement at UCSC.
           </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto mb-16">
+          <div className="text-center transform transition-transform duration-300 hover:scale-105">
+            <Image
+              src="/images/graph1.png"
+              alt="Example graph of student distribution by division"
+              width={600}
+              height={600}
+              className="rounded-xl shadow-md mx-auto"
+            />
+            <p className="text-sm text-gray-500 mt-2">
+              Example data shown during the presentation to Dean Wolf: Student distribution by academic division (2024–25). Data anonymized for demonstration.
+            </p>
+          </div>
+
+          <div className="text-center transform transition-transform duration-300 hover:scale-105">
+            <Image
+              src="/images/graph2.png"
+              alt="Example graph of top majors in general membership"
+              width={600}
+              height={600}
+              className="rounded-xl shadow-md mx-auto"
+            />
+            <p className="text-sm text-gray-500 mt-2">
+              Example: Top majors represented in general membership. Demonstrates Canvas’ ability to highlight engagement by discipline.
+            </p>
+          </div>
+
+          <div className="text-center transform transition-transform duration-300 hover:scale-105">
+            <Image
+              src="/images/graph3.png"
+              alt="Example graph of race and ethnicity data"
+              width={600}
+              height={600}
+              className="rounded-xl shadow-md mx-auto"
+            />
+            <p className="text-sm text-gray-500 mt-2">
+              Example: Race and ethnicity breakdown for 2024–25 general members. Demo data used for visualization and impact storytelling.
+            </p>
+          </div>
         </div>
 
         <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 max-w-4xl mx-auto mb-12">
@@ -65,47 +106,6 @@ export function CanvasDataSection() {
           <p className="text-center text-sm text-gray-500 mt-4 px-4">
             A Zoom conversation between Aidan Gu and Chancellor Cynthia Larive about Slugworks’ impact, community growth, and potential for future institutional support.
           </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="text-center">
-            <Image
-              src="/images/graph1.png"
-              alt="Example graph of student distribution by division"
-              width={500}
-              height={500}
-              className="rounded-xl shadow-md mx-auto"
-            />
-            <p className="text-sm text-gray-500 mt-2">
-              Example: Student distribution by academic division (2024–25). Data anonymized for privacy.
-            </p>
-          </div>
-
-          <div className="text-center">
-            <Image
-              src="/images/graph2.png"
-              alt="Example graph of top majors in general membership"
-              width={500}
-              height={500}
-              className="rounded-xl shadow-md mx-auto"
-            />
-            <p className="text-sm text-gray-500 mt-2">
-              Example: Top majors represented in Slugworks general membership. Visualizing where our student makers come from.
-            </p>
-          </div>
-
-          <div className="text-center">
-            <Image
-              src="/images/graph3.png"
-              alt="Example graph of race and ethnicity data"
-              width={500}
-              height={500}
-              className="rounded-xl shadow-md mx-auto"
-            />
-            <p className="text-sm text-gray-500 mt-2">
-              Example: Race and ethnicity breakdown of general members (2024–25). Demo data for visualization purposes only.
-            </p>
-          </div>
         </div>
       </div>
     </section>
