@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className="bg-gradient-to-r from-ucsc-navy to-ucsc-blue text-white py-8 px-4 shadow-xl">
+    <header className="bg-black text-white py-8 px-4 shadow-xl">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-6">
           {/* Slugworks Logo */}
@@ -18,5 +18,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
