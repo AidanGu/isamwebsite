@@ -15,7 +15,7 @@ export function DSICollaborationSection() {
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             This shared certification workflow between DSI and Slugworks allows students to complete training once and unlock tools in both locations. The entire process is handled through a single streamlined Canvas module.
           </p>
-          <p className="text-md text-gray-600 max-w-4xl mx-auto leading-relaxed mt-4">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             The Digital Scholarship Innovation Studio (DSI), located in the Science and Engineering Library, offers hands-on resources for digital fabrication, 3D data, and critical making. This unified system reduces duplication, encourages cross-campus collaboration, and supports open experimentation.
           </p>
           <p className="text-sm text-gray-500 max-w-3xl mx-auto mt-2 italic">
