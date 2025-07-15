@@ -34,11 +34,16 @@ export function DSICollaborationSection() {
               style={{ transformOrigin: "center" }}
             >
               <Image
-                src="/images/dsi-workflow-horizontal.png"
+                src={
+                  isExpanded
+                    ? "/images/dsixslugworks.gif"
+                    : "/images/dsi-workflow-horizontal.png"
+                }
                 alt="DSI and Slugworks 3D Printer Certification Workflow"
                 fill
                 className="object-contain transition-transform duration-300"
               />
+
             </div>
           </CardContent>
         </Card>
