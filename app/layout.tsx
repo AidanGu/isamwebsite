@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Space_Grotesk } from "next/font/google"
 import "./globals.css"
-import { Analytics } from '@vercel/analytics/next'
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Connection Through Canvas - UCSC Slugworks ISAM 2025",
   description:
     "A centralized, student-led approach to certification, collaboration, and community using Canvas LMS integration at UCSC Slugworks makerspace.",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -32,6 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Favicon and Apple icon support */}
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link rel="apple-touch-icon" href="/images/favicon.png" />
+        <meta name="theme-color" content="#000000" />
+
+        {/* Font preconnects and loads */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://vercel-storage.com" crossOrigin="" />
         <link rel="preconnect" href="https://esm.v0.dev" crossOrigin="" />
@@ -40,7 +46,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-inter`}>{children}
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-inter`}>
+        {children}
         <Analytics />
       </body>
     </html>
