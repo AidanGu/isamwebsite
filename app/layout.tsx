@@ -20,8 +20,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Connection Through Canvas - UCSC Slugworks ISAM 2025",
   description:
-    "A centralized, student-led approach to certification, collaboration, and community using Canvas LMS integration at UCSC Slugworks makerspace.",
-  generator: "v0.dev",
+    "A centralized, student-led approach to certification, collaboration, and community using Canvas LMS integration at UCSC Slugworks makerspace."
 }
 
 export default function RootLayout({
@@ -33,8 +32,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Favicon and Apple icon support */}
-        <link rel="icon" type="image/png" href="public/favicon.png" />
-        <link rel="apple-touch-icon" href="public/favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <meta name="theme-color" content="#000000" />
 
         {/* Font preconnects and loads */}
