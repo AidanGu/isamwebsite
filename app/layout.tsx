@@ -33,8 +33,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Favicon and Apple icon support */}
-        <link rel="icon" type="image/png" href="/images/favicon.png" />
-        <link rel="apple-touch-icon" href="/images/favicon.png" />
+        <link rel="icon" type="image/png" href="public/favicon.png" />
+        <link rel="apple-touch-icon" href="public/favicon.png" />
         <meta name="theme-color" content="#000000" />
 
         {/* Font preconnects and loads */}
